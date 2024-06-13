@@ -3,56 +3,12 @@ apiVersion: v1
 metadata:
   name: mq-consumer
   namespace: mq-demo
-  uid: 468222e7-3fa1-41cf-bdce-7820308f5664
-  resourceVersion: '2407824'
-  creationTimestamp: '2024-06-13T15:02:04Z'
   labels:
     app: mq-consumer
     app.kubernetes.io/component: mq-consumer
     app.kubernetes.io/instance: mq-consumer
   annotations:
     openshift.io/generated-by: OpenShiftNewApp
-  managedFields:
-    - manager: oc
-      operation: Update
-      apiVersion: v1
-      time: '2024-06-13T15:02:04Z'
-      fieldsType: FieldsV1
-      fieldsV1:
-        'f:metadata':
-          'f:annotations':
-            .: {}
-            'f:openshift.io/generated-by': {}
-          'f:labels':
-            .: {}
-            'f:app': {}
-            'f:app.kubernetes.io/component': {}
-            'f:app.kubernetes.io/instance': {}
-        'f:spec':
-          'f:internalTrafficPolicy': {}
-          'f:ports':
-            .: {}
-            'k:{"port":8080,"protocol":"TCP"}':
-              .: {}
-              'f:name': {}
-              'f:port': {}
-              'f:protocol': {}
-              'f:targetPort': {}
-            'k:{"port":8443,"protocol":"TCP"}':
-              .: {}
-              'f:name': {}
-              'f:port': {}
-              'f:protocol': {}
-              'f:targetPort': {}
-            'k:{"port":8778,"protocol":"TCP"}':
-              .: {}
-              'f:name': {}
-              'f:port': {}
-              'f:protocol': {}
-              'f:targetPort': {}
-          'f:selector': {}
-          'f:sessionAffinity': {}
-          'f:type': {}
 spec:
   clusterIP: 172.30.83.166
   ipFamilies:
@@ -78,5 +34,3 @@ spec:
   sessionAffinity: None
   selector:
     deployment: mq-consumer
-status:
-  loadBalancer: {}
