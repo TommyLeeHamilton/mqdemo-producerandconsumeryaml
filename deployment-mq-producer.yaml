@@ -1,6 +1,7 @@
 ﻿kind: Deployment
 apiVersion: apps/v1
 metadata:
+ name: mq-producer
  namespace: mq-demo
   labels:
     app: mq-producer
